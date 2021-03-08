@@ -10,3 +10,14 @@ allprojects {
     }
 }
 
+plugins {
+  id "org.sonarqube" version "3.1.1"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "SergioRsq_AISS-2021-L10-G01-serrivroa"
+    property "sonar.organization", "sergiorsq"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
